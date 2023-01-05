@@ -40,6 +40,16 @@ img {
 body{
     background-color: var(--Dark-cyan);
     overflow: hidden;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 35vh, left 50vw top 38vh;
+}
+
+@media (min-width: 400px) { 
+    body{
+        background-position: right 50vw bottom 37vh, left 50vw top 42vh;
+
+    }
 }
 
 .wrapper{
@@ -52,26 +62,12 @@ body{
     align-items: center;
     padding: 2rem;
 }
-
-.bg_top{
-    position: absolute;
-    top: -50%;
-    left: -20%;
-    z-index: -1;
-}
-
-.bg_bottom{
-    position: absolute;
-    bottom: -50%;
-    right: -20%;
-    z-index: -1;
-}
-
 .profile{
     background-color: var(--white);
     border-radius: 1rem;
     font-family: var(--fuente-principal);
     width: 28rem;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
 }
 .profile_img{
     /* background-image: url(../images/); */
