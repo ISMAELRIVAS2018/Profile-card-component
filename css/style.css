@@ -74,7 +74,7 @@ body{
     width: 28rem;
 }
 .profile_img{
-    background-image: url(../images/bg-pattern-card.svg);
+    /* background-image: url(../images/); */
     height: 12rem;
     border-radius: 01rem 1rem 0 0;
 }
