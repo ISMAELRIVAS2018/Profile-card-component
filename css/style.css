@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --fuente-principal: 'Kumbh Sans', sans-serif;
+
+    /* ======= primario ============= */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --white: #fff;
+
+    /* ========= Neutral ================= */
+
+    --Dark-gray: hsl(0, 0%, 59%);
+
+}
+
+
+
+html {
+    font-size: 65.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+body{
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+.wrapper{
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 100vh;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.bg_top{
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    z-index: -1;
+}
+
+.bg_bottom{
+    position: absolute;
+    bottom: -50%;
+    right: -20%;
+    z-index: -1;
+}
+
+.profile{
+    background-color: var(--white);
+    border-radius: 1rem;
+    font-family: var(--fuente-principal);
+    width: 28rem;
+}
+.profile_img{
+    height: 12rem;
+    border-radius: 01rem 1rem 0 0;
+}
+
+
+.profile_username{
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    margin-top: -4rem;
+}
+
+.profile_victor{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    border: solid .5rem var(--white);
+}
+.profile_username h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.profile_username span{
+    font-size: 1.5rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+}
+
+.profile_username p {
+    font-size: 1.2rem;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.line{
+    height: 0.08rem;
+    background-color:#6a6f8129;
+}
+
+.profile_information_contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem;
+
+}
+
+
+
+.profile_numeber{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    justify-content: center
+
+
+}
+
+.profile_follower{
+    font-size: .8rem;
+    color: var(--Dark-grayish-blue);
+    text-align: center;
+    padding: .5rem 0;
+    letter-spacing: .9pt;
+    font-weight: 500;
+}
